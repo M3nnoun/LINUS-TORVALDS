@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500&family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@300;600;700&family=Poppins&family=REM&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+*::selection {
+    background-color: orange;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 1px);
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container section:nth-child(2) {
+    flex-grow: 1;
+    background-color: orange;
+}
+
+.container section:nth-child(2) ::selection {
+    flex-grow: 1;
+    background-color: rgb(255, 254, 252);
+    color: orange;
+}
+img {
+    width:60rem;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+}
+.header ,section:nth-child(2) {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+.header h1::selection,h4::selection {
+    background-color:white;
+    color: black;
+}
+
+section:first-child blockquote {
+    color: black;
+    font-weight: bold;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0.35rem;
+}
+
+blockquote {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    align-self: center;
+  }
+  
+  blockquote:before {
+    content: open-quote;
+  }
+  
+  blockquote:after {
+    content: close-quote;
+  }
+  
+  blockquote:before,
+  blockquote:after {
+    display: inline-block;
+    vertical-align: bottom;
+    color: orange;
+    font-size: 4em;
+    top: .2em;
+    position: relative;
+  }
+
+section:first-child div {
+    position: relative;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(255, 255, 255);
+   flex-direction: row-reverse;
+
+}
+
+section:first-child div p {
+    align-self: center;
+    margin-left: 2em;
+}
+
+section:first-child div img{
+   transform: translate(30%,0);
+    overflow: hidden;
+}
+section:nth-child(2) {
+    height: 30%;
+}
+
+.main {
+    height: 100%;
+}
+
+.main section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.main section:nth-child(2) >* {
+padding: 0.5em;
+font-size: 1.03em;
+}
+
+.main section:nth-child(2) h3 {
+    font-size: 3em;
+    text-transform: capitalize;
+    text-decoration:underline;
+}
+
+
+footer {
+    background-color: black;
+}
+
+footer::selection {
+    background-color: white;
+    color: black;
+}
